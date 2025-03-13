@@ -1,0 +1,101 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Container geral */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Menu */
+.menu {
+    background-color: #80C6FF; /* Azul claro */
+    padding: 15px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #ffffff; /* Cor branca para o texto */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Painel azul claro */
+.painel {
+    background-color: #80C6FF; /* Azul claro */
+    color: #ffffff; /* Letras brancas */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.painel-secao {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.painel-secao.active {
+    display: block;
+    opacity: 1;
+}
+
+.painel-secao h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.painel-secao p {
+    font-size: 16px;
+}
+
+/* Texto abaixo do painel */
+.texto-below {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.hello-text {
+    color: #000000; /* Cor preta para o texto */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #80C6FF; /* Azul claro */
+    color: #ffffff; /* Letras brancas */
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.rodape p {
+    margin: 0;
+}
+

@@ -1,1 +1,55 @@
-hi
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel com Navegação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Menu principal -->
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html" class="menu-link" data-target="home">Home</a></li>
+                <li><a href="projetos.html" class="menu-link" data-target="projetos">Projetos</a></li>
+                <li><a href="contatos.html" class="menu-link" data-target="contatos">Contatos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Painel azul -->
+        <div class="painel">
+            <!-- Home Section -->
+            <section id="home" class="painel-secao">
+                <h2>Home</h2>
+                <p>Bem-vindo à nossa página inicial!</p>
+            </section>
+
+            <!-- Projetos Section -->
+            <section id="projetos" class="painel-secao">
+                <h2>Projetos</h2>
+                <p>Confira os nossos projetos realizados ou em andamento.</p>
+            </section>
+
+            <!-- Contatos Section -->
+            <section id="contato" class="painel-secao">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco através dos seguintes meios:</p>
+            </section>
+        </div>
+
+        <!-- Texto abaixo do painel -->
+        <div class="texto-below">
+            <p class="hello-text">Hello!</p>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="rodape">
+            <p>Informações adicionais no rodapé.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
