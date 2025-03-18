@@ -1,13 +1,18 @@
 
-document.addEventListener('DOMContentLoaded', function () {
-    const menuLinks = document.querySelectorAll('.menu-link');
-    
-    // Adiciona event listener para cada link do menu
-    menuLinks.forEach(link => {
-        link.addEventListener('click', function (event) {
-            event.preventDefault();
-            const targetUrl = this.getAttribute('href'); // Pegando o link da página alvo
-            window.location.href = targetUrl; // Redireciona para a nova página
-        });
+// Função para mostrar a seção ativa
+function showSection(sectionId) {
+    // Esconde todas as seções
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.classList.remove('active');
     });
+
+    // Exibe a seção selecionada
+    const activeSection = document.getElementById(sectionId);
+    activeSection.classList.add('active');
+}
+
+// Inicializa a página com a primeira seção visível
+document.addEventListener("DOMContentLoaded", () => {
+    showSection('home');
 });
