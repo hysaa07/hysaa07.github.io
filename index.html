@@ -238,6 +238,35 @@ pre {
         footer p {
             margin: 0;
         }
+        pre {
+    background-color: #222;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 14px;
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Efeito suave para expansão/recolhimento */
+    max-height: 200px; /* Limite inicial para o tamanho do bloco */
+}
+
+button {
+    background-color: #c22156;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #000;
+}
+
     </style>
 </head>
 <body>
@@ -273,8 +302,8 @@ pre {
         <div class="project-cards">
             <div class="project-card">
                 <img src="https://wallpaper.forfun.com/fetch/d5/d5a2100b4735c179baaf467f5a49b0a1.jpeg" alt="Landing Page para Agência Criativa">
-                <h3>Landing Page para Agência Criativa</h3>
-                <pre>
+                <h3></h3>
+                <pre id="code1">
                     &lt;!DOCTYPE html&gt;
 &lt;html lang="pt-br"&gt;
 &lt;head&gt;
@@ -477,6 +506,24 @@ footer {
 
 
                 </pre>
+                <button onclick="toggleCodeVisibility('code1')">Ver mais</button>
+                <script>
+                    function toggleCodeVisibility(codeId) {
+                        const codeElement = document.getElementById(codeId);
+                        const button = codeElement.nextElementSibling; // O próximo elemento é o botão
+                
+                        // Se o código estiver visível, esconder
+                        if (codeElement.style.maxHeight) {
+                            codeElement.style.maxHeight = null;
+                            button.innerText = 'Ver mais'; // Alterar o texto do botão
+                        } else {
+                            // Caso contrário, expandir
+                            codeElement.style.maxHeight = codeElement.scrollHeight + "px"; // Ajusta para a altura total do código
+                            button.innerText = 'Ver menos'; // Alterar o texto do botão
+                        }
+                    }
+                </script>
+                
             </div>
 
 
@@ -529,6 +576,7 @@ footer {
             const activeSection = document.getElementById(sectionId);
             activeSection.classList.add('active');
         }
+
     </script>
 </body>
 </html>
