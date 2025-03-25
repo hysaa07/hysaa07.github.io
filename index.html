@@ -96,8 +96,10 @@
         }
 
         .project-card img {
-            width: 100%;
-            border-radius: 5px;
+            width: 500px; /* Define a largura das imagens como 500px */
+            height: auto; /* Mantém a proporção das imagens */
+            display: block; /* Garante que a imagem seja tratada como um bloco */
+            margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
         }
 
         .project-card h3 {
@@ -122,6 +124,21 @@
             overflow-x: auto;
             margin-top: 15px;
         }
+        /* Bloco de código */
+pre {
+    background-color: #222;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 14px;
+    overflow-x: auto;
+    margin-top: 15px;
+    width: 500px; /* Largura fixa de 500px */
+    margin: 0 auto; /* Centraliza o bloco horizontalmente */
+}
+
 
         /* Botão "Ver meus projetos" */
         .cta-button {
@@ -255,20 +272,220 @@
         <h2>Meus Projetos</h2>
         <div class="project-cards">
             <div class="project-card">
-                <img src="imagem1.jpg" alt="Landing Page para Agência Criativa">
+                <img src="https://wallpaper.forfun.com/fetch/d5/d5a2100b4735c179baaf467f5a49b0a1.jpeg" alt="Landing Page para Agência Criativa">
                 <h3>Landing Page para Agência Criativa</h3>
-                <p>Desenvolvi uma landing page para uma campanha de marketing de uma agência criativa, com design visualmente atrativo e otimização para conversões.</p>
                 <pre>
+                    &lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Dragon Ball Super&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;style&gt;
+        /* Ajuste para as imagens do carrossel */
+        .carousel-inner img {
+            width: 100%;  /* As imagens ocupam toda a largura */
+            height: 600px; /* Defina a altura desejada */
+            object-fit: cover; /* Faz com que as imagens preencham a área sem distorcer */
+        }
+
+        /* Ajuste o carrossel para ser centralizado e com limites de tamanho */
+        .carousel {
+            max-width: 1300px; /* Limite de largura do carrossel */
+            margin: 0 auto; /* Centraliza o carrossel */
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Dragon Ball Super&lt;/h1&gt;
+        &lt;p&gt;Relembre um pouco sobre Dragon Ball Super. &lt;/p&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="https://criticalhits-com-br.webpkgcache.com/doc/-/s/criticalhits.com.br/anime/dragon-ball-super-personagens/" target="_blank"&gt;Personagens&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://dragonball.fandom.com/pt-br/wiki/Dragon_Ball_Super_(mang%C3%A1)"&gt;Mangá&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://pt.wikipedia.org/wiki/Dragon_Ball_Super" target="_blank"&gt;+ Informações&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;!-- Seção Dragon Ball Super --&gt;
+    &lt;section class="carousel slide mx-auto" data-bs-ride="carousel" id="carouselExampleControls"&gt;
+        &lt;div class="carousel-inner"&gt;
+            &lt;div class="carousel-item active"&gt;
+                &lt;img src="https://preview.redd.it/sypoeebfdvox.jpg?auto=webp&s=966b9bfb61b66e0046a4f0e45ca6d44df5f863c0" class="d-block w-100" alt="title m3"&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel-item"&gt;
+                &lt;img src="https://www.boletimnerd.com.br/wp-content/uploads/2017/08/musica-abertura-dragon-ball-super-cartoon-network-fb.jpg" class="d-block w-100" alt="title m2"&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel-item"&gt;
+                &lt;img src="https://geekdama.com.br/wp-content/uploads/2015/06/dragon-ball-super-champa.jpg" class="d-block w-100" alt="title Ml"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"&gt;
+            &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+            &lt;span class="visually-hidden"&gt;Anterior&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"&gt;
+            &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+            &lt;span class="visually-hidden"&gt;Próximo&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;p&gt;Em 28 de abril de 2015, Toei Animation anunciou Dragon Ball Super (ドラゴンボール超, Doragon Bōru Sūpā), a primeira série de anime de Dragon Ball a ser lançada em 18 anos desde Dragon Ball GT. Estreou em 5 de julho de 2015 e é exibida como uma série semanal às 9:00 da manhã na Fuji TV aos domingos. Masako Nozawa reprisa seus papéis como Goku, Gohan e Goten. A maioria do elenco original reprisa seus papéis também. Kouichi Yamadera e Masakazu Morita também reprisam seus papéis, como Bills e Whis, respectivamente. A história do anime é definida quatro anos após a derrota de Majin Boo, quando a Terra se tornou pacífica mais uma vez. Akira Toriyama é o criador da série, e também é creditado por "história original e conceitos de design de personagens".&lt;/p&gt;
+        &lt;p&gt;Super Dragon Ball Heroes: Em maio de 2018, a Yonkou Productions anunciou o anime Super Dragon Ball Heroes, baseado no jogo de mesmo nome publicado pela Bandai Namco.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Seção sobre os personagens --&gt;
+    &lt;section class="container mt-5"&gt;
+        &lt;div class="row"&gt;
+            &lt;article class="col-lg-6 mb-4"&gt;
+                &lt;div class="card"&gt;
+                    &lt;img src="https://th.bing.com/th/id/R.3fb45d89e8b1bfa17ebc2e44ffa55d9f?rik=sOzwnH94YWeeXw&riu=http%3a%2f%2fimg4.wikia.nocookie.net%2f__cb20131003175517%2fdragonball%2fes%2fimages%2f5%2f5d%2fGoku-papel-de-parede-198459.jpg&ehk=Vq3RW00KakJ3d5UKdtJtXUX1hv3IWRBS2FDDKCFxG1A%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="title"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;h5 class="card-title"&gt;Goku&lt;/h5&gt;
+                        &lt;p class="card-text"&gt;Goku, o protagonista de Dragon Ball, é um guerreiro Saiyajin com a personalidade otimista. Desde pequeno, ele treinou incansavelmente para se tornar mais forte, enfrentando desafios cada vez maiores. Com habilidades extraordinárias, como o Kamehameha e transformações icônicas como o Super Saiyajin, Goku é um defensor da Terra e do universo.&lt;/p&gt;
+                        &lt;a href="#" class="btn btn-primary"&gt;Saiba mais sobre Goku&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/article&gt;
+
+            &lt;article class="col-lg-6 mb-4"&gt;
+                &lt;div class="card"&gt;
+                    &lt;img src="https://th.bing.com/th/id/R.5bca5134cbbbc6a225318ea34dd8f50b?rik=Ubb0Roql97Yhvg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fb%2ff%2fc%2f206914.jpg&ehk=RLUfXmNX3PX69yW9nxobwA1VYK70EkYVJ3xow4jc0Fw%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Vegeta"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;h5 class="card-title"&gt;Vegeta&lt;/h5&gt;
+                        &lt;p class="card-text"&gt;Vegeta, o príncipe dos Saiyajins, é um dos personagens mais emblemáticos de Dragon Ball. Inicialmente introduzido como um vilão orgulhoso e implacável, ele evolui ao longo da série, tornando-se um aliado valioso e rival de Goku. Vegeta é conhecido por sua determinação feroz, orgulho inabalável e busca constante por poder para superar seus limites. Embora sua personalidade seja muitas vezes dura, ele demonstra um profundo amor por sua família, especialmente Bulma e seus filhos.&lt;/p&gt;
+                        &lt;a href="#" class="btn btn-primary"&gt;Saiba mais sobre Vegeta&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/article&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;footer class="bg-light text-center p-3 mt-5"&gt;
+        &lt;p&gt;&copy; 2025 [Seu Nome]. Todos os direitos reservados.&lt;/p&gt;
+    &lt;/footer&gt;
+
+    &lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+ <h2>CSS;</h2>
+ &lt;style&gt;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #FF6347;  &lt;!-- Cor vibrante de fundo --&gt;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #FFD700; &lt;!-- Cor de destaque ao passar o mouse --&gt;
+}
+
+section {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li a {
+    font-size: 1.2em;
+    color: #FF6347;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #FFD700;
+}
+
+ul li p {
+    font-size: 1em;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #FF6347;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FFD700; &lt;!-- Botão com cor vibrante --&gt;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #FF4500; &lt;!-- Cor de hover --&gt;
+    color: white;
+}
+&lt;/style&gt;
+
+
+
+
 
                 </pre>
             </div>
 
+
             <div class="project-card">
-                <img src="imagem2.jpg" alt="Website Institucional">
+                <img src="https://www.isbrasil.info/blog/ckfinder/userfiles/images/amostras-de-cores-de-designers-graficos-colocando-na-mesa-da-mesa_35675-1008(1).webp" alt="Website Institucional">
                 <h3>Website Institucional</h3>
                 <p>Criação de um site institucional para uma empresa local, focado em uma navegação clara e responsiva, com design moderno e compatibilidade com todos os dispositivos.</p>
                 <pre>
-
+                    <!-- Bloco de código aqui -->
                 </pre>
             </div>
 
@@ -277,7 +494,7 @@
                 <h3>E-commerce para Loja de Roupas</h3>
                 <p>Desenvolvimento de um e-commerce completo, com uma experiência de compra otimizada, incluindo funcionalidades de checkout seguro e navegação intuitiva.</p>
                 <pre>
-
+                    <!-- Bloco de código aqui -->
                 </pre>
             </div>
         </div>
