@@ -44,75 +44,87 @@
             font-weight: bold;
         }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
 
-.nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
-    transition: 0.3s;
-}
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            transition: 0.3s;
+        }
 
-.nav-links li a:hover {
-    color: #ffcc00;
-}
+        .nav-links li a:hover {
+            color: #ffcc00;
+        }
 
-/* Seções */
-.content-section {
-    padding: 80px 20px;
-    text-align: center;
-    display: none;
-}
+        /* Seções */
+        .content-section {
+            padding: 80px 20px;
+            text-align: center;
+            display: none;
+        }
 
-.content-section.active {
-    display: block;
-}
+        .content-section.active {
+            display: block;
+        }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
 
-/* Projetos */
-.project-cards {
-    display: block; /* Alterado de flex para block para alinhar verticalmente */
-    gap: 20px;
-}
+        /* Projetos */
+        .project-cards {
+            display: block; /* Alterado de flex para block para alinhar verticalmente */
+            gap: 20px;
+        }
 
-.project-card {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px; /* Espaço entre os projetos */
-}
+        .project-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px; /* Espaço entre os projetos */
+        }
 
-.project-card img {
-    width: 500px; /* Define a largura das imagens como 500px */
-    height: auto; /* Mantém a proporção das imagens */
-    display: block; /* Garante que a imagem seja tratada como um bloco */
-    margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
-}
+        .project-card img {
+            width: 500px; /* Define a largura das imagens como 500px */
+            height: auto; /* Mantém a proporção das imagens */
+            display: block; /* Garante que a imagem seja tratada como um bloco */
+            margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
+        }
 
-.project-card h3 {
-    font-size: 24px;
-    margin-top: 10px;
-}
+        .project-card h3 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
 
-.project-card p {
-    font-size: 16px;
-    margin-top: 10px;
-}
+        .project-card p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
 
-/* Bloco de código */
+        /* Bloco de código */
+        pre {
+            background-color: #222;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 14px;
+            overflow-x: auto;
+            margin-top: 15px;
+        }
+        /* Bloco de código */
 pre {
     background-color: #222;
     color: #fff;
@@ -123,396 +135,396 @@ pre {
     font-size: 14px;
     overflow-x: auto;
     margin-top: 15px;
-}
-/* Bloco de código */
-pre {
-background-color: #222;
-color: #fff;
-padding: 15px;
-border-radius: 5px;
-white-space: pre-wrap;
-word-wrap: break-word;
-font-size: 14px;
-overflow-x: auto;
-margin-top: 15px;
-width: 500px; /* Largura fixa de 500px */
-margin: 0 auto; /* Centraliza o bloco horizontalmente */
+    width: 500px; /* Largura fixa de 500px */
+    margin: 0 auto; /* Centraliza o bloco horizontalmente */
 }
 
 
-/* Botão "Ver meus projetos" */
-.cta-button {
+        /* Botão "Ver meus projetos" */
+        .cta-button {
+            background-color: #c22156;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #000;
+            color: #c22156;
+        }
+
+        /* Links de Contato */
+        .social-links {
+            margin-bottom: 30px;
+        }
+
+        .social-links p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .social-links ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .social-links li a {
+            text-decoration: none;
+            color: #c22156;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .social-links li a:hover {
+            color: white;
+        }
+
+        /* Formulário de contato */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        .contact button {
+            background: #c22156;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact button:hover {
+            background: #000;
+            color: #c22156;
+        }
+
+        /* Rodapé fixo */
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        footer p {
+            margin: 0;
+        }
+        pre {
+    background-color: #222;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 14px;
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Efeito suave para expansão/recolhimento */
+    max-height: 200px; /* Limite inicial para o tamanho do bloco */
+}
+
+button {
     background-color: #c22156;
     color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.cta-button:hover {
-    background-color: #000;
-    color: #c22156;
-}
-
-/* Links de Contato */
-.social-links {
-    margin-bottom: 30px;
-}
-
-.social-links p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.social-links ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.social-links li a {
-    text-decoration: none;
-    color: #c22156;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-.social-links li a:hover {
-    color: white;
-}
-
-/* Formulário de contato */
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.contact input,
-.contact textarea {
-    width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: none;
-    outline: none;
-}
-
-.contact button {
-    background: #c22156;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
     cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
-.contact button:hover {
-    background: #000;
-    color: #c22156;
-}
-
-/* Rodapé fixo */
-footer {
-    background: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-footer p {
-    margin: 0;
-}
-pre {
-background-color: #222;
-color: #fff;
-padding: 15px;
-border-radius: 5px;
-white-space: pre-wrap;
-word-wrap: break-word;
-font-size: 14px;
-overflow: hidden;
-transition: max-height 0.3s ease; /* Efeito suave para expansão/recolhimento */
-max-height: 200px; /* Limite inicial para o tamanho do bloco */
-}
-
-button {
-background-color: #c22156;
-color: white;
-padding: 10px;
-border-radius: 5px;
-border: none;
-cursor: pointer;
-margin-top: 10px;
-font-weight: bold;
-transition: 0.3s;
-}
-
 button:hover {
-background-color: #000;
+    background-color: #000;
 }
-/* Estilo para a foto de perfil */
+    /* Estilo para a foto de perfil */
 .perfil {  
-width: 150px; /* Ajuste o tamanho conforme necessário */  
-height: 150px;  
-border-radius: 50%; /* Faz a imagem ficar redonda */  
-object-fit: cover; /* Faz a imagem se ajustar bem no formato circular */  
-margin: 0 auto 20px; /* Centraliza a imagem horizontalmente e mantém o espaçamento inferior */  
-display: block; /* Permite o uso de margin auto */  
+    width: 150px; /* Ajuste o tamanho conforme necessário */  
+    height: 150px;  
+    border-radius: 50%; /* Faz a imagem ficar redonda */  
+    object-fit: cover; /* Faz a imagem se ajustar bem no formato circular */  
+    margin: 0 auto 20px; /* Centraliza a imagem horizontalmente e mantém o espaçamento inferior */  
+    display: block; /* Permite o uso de margin auto */  
 }
-</style>
+#sobre {
+    max-width: 800px; /* Define a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    font-size: 16px; /* Define um tamanho de fonte confortável */
+    line-height: 1.6; /* Melhora o espaçamento entre as linhas de texto */
+}
+
+    </style>
 </head>
 <body>
 
-<!-- Cabeçalho -->
-<header>
-<div class="logo">
-    <h1>Heloysa Alves</h1>
-</div>
-<ul class="nav-links">
-    <li><a href="javascript:void(0);" onclick="showSection('home')">Início</a></li>
-    <li><a href="javascript:void(0);" onclick="showSection('sobre')">Sobre</a></li>
-    <li><a href="javascript:void(0);" onclick="showSection('projetos')">Projetos</a></li>
-    <li><a href="javascript:void(0);" onclick="showSection('contato')">Contato</a></li>
-</ul>
-</header>
-<!-- Foto de perfil -->
-<img src="https://avatars.githubusercontent.com/u/191175685?v=4" alt="Heloysa Alves" class="perfil">
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Heloysa Alves</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="javascript:void(0);" onclick="showSection('home')">Início</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('sobre')">Sobre</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('projetos')">Projetos</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('contato')">Contato</a></li>
+        </ul>
+    </header>
+    <!-- Foto de perfil -->
+    <img src="https://avatars.githubusercontent.com/u/191175685?v=4" alt="Heloysa Alves" class="perfil">
 
 </section>
 
-<!-- Seções -->
-<div id="home" class="content-section active">
-<h2>Olá, eu sou Heloysa Alves</h2>
-<p>Sou Desenvolvedora Web e Designer Gráfico, com paixão por criar soluções digitais que combinam design inovador e funcionalidade.</p>
-<!-- Botão para ver projetos -->
-<a href="javascript:void(0);" onclick="showSection('projetos')" class="cta-button">Ver meus projetos</a>
-</div>
+    <!-- Seções -->
+    <div id="home" class="content-section active">
+        <h2>Olá, eu sou Heloysa Alves</h2>
+        <p>Sou Desenvolvedora Web e Designer Gráfico, com paixão por criar soluções digitais que combinam design inovador e funcionalidade.</p>
+        <!-- Botão para ver projetos -->
+        <a href="javascript:void(0);" onclick="showSection('projetos')" class="cta-button">Ver meus projetos</a>
+    </div>
 
-<div id="sobre" class="content-section">
-<h2>Sobre Mim</h2>
-<p>Minha experiência</p>
-<li></li>
-</div>
+    <div id="sobre" class="content-section">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Meu nome é Heloysa Alves, sou desenvolvedora web e designer gráfico, apaixonada por criar experiências digitais dinâmicas e imersivas. Tenho experiência em HTML, CSS e JavaScript, além de um olhar atento para o design e a usabilidade. Busco sempre unir criatividade e funcionalidade em cada projeto, garantindo interfaces intuitivas e visualmente atraentes.
 
-<div id="projetos" class="content-section">
-<h2>Meus Projetos</h2>
-<div class="project-cards">
-    <div class="project-card">
-        <img src="https://wallpaper.forfun.com/fetch/d5/d5a2100b4735c179baaf467f5a49b0a1.jpeg" alt="Landing Page para Agência Criativa">
-        <h3>WEB DBS</h3>
-        <p> WEB DBS é um projeto inspirado no universo de Dragon Ball Super, focado em explorar conceitos de design moderno, interatividade e boas práticas de programação. Este projeto demonstra habilidades em HTML, CSS, JavaScript e frameworks modernos para criar uma experiência envolvente para os fãs da série.</p>
-        <pre id="code1">
-            <h3>HTML</h3>
-            &lt;!DOCTYPE html&gt;
+            Atualmente, estou cursando Programação Web no IFRN, com previsão de conclusão em março de 2025. Minha jornada na tecnologia me tornou uma pessoa observadora, analítica e versátil, capaz de trabalhar tanto de forma independente quanto em equipe. Apesar da programação ser uma de minhas habilidades, meu verdadeiro interesse está em trabalhos mais práticos e criativos.
+            
+            Sou uma profissional sincera, dedicada e sempre pronta para ajudar. Meu objetivo é proporcionar soluções inovadoras e eficientes para cada desafio, garantindo que cada projeto tenha sua própria identidade e impacto.</p>
+        
+    </div>
+
+    <div id="projetos" class="content-section">
+        <h2>Meus Projetos</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="https://wallpaper.forfun.com/fetch/d5/d5a2100b4735c179baaf467f5a49b0a1.jpeg" alt="Landing Page para Agência Criativa">
+                <h3>WEB DBS</h3>
+                <p> WEB DBS é um projeto inspirado no universo de Dragon Ball Super, focado em explorar conceitos de design moderno, interatividade e boas práticas de programação. Este projeto demonstra habilidades em HTML, CSS, JavaScript e frameworks modernos para criar uma experiência envolvente para os fãs da série.</p>
+                <pre id="code1">
+                    <h3>HTML</h3>
+                    &lt;!DOCTYPE html&gt;
 &lt;html lang="pt-br"&gt;
 &lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-&lt;title&gt;Dragon Ball Super&lt;/title&gt;
-&lt;link rel="stylesheet" href="style.css"&gt;
-&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
-&lt;style&gt;
-/* Ajuste para as imagens do carrossel */
-.carousel-inner img {
-    width: 100%;  /* As imagens ocupam toda a largura */
-    height: 600px; /* Defina a altura desejada */
-    object-fit: cover; /* Faz com que as imagens preencham a área sem distorcer */
-}
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Dragon Ball Super&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;style&gt;
+        /* Ajuste para as imagens do carrossel */
+        .carousel-inner img {
+            width: 100%;  /* As imagens ocupam toda a largura */
+            height: 600px; /* Defina a altura desejada */
+            object-fit: cover; /* Faz com que as imagens preencham a área sem distorcer */
+        }
 
-/* Ajuste o carrossel para ser centralizado e com limites de tamanho */
-.carousel {
-    max-width: 1300px; /* Limite de largura do carrossel */
-    margin: 0 auto; /* Centraliza o carrossel */
-}
-&lt;/style&gt;
+        /* Ajuste o carrossel para ser centralizado e com limites de tamanho */
+        .carousel {
+            max-width: 1300px; /* Limite de largura do carrossel */
+            margin: 0 auto; /* Centraliza o carrossel */
+        }
+    &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;header&gt;
-&lt;h1&gt;Dragon Ball Super&lt;/h1&gt;
-&lt;p&gt;Relembre um pouco sobre Dragon Ball Super. &lt;/p&gt;
-&lt;nav&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href="https://criticalhits-com-br.webpkgcache.com/doc/-/s/criticalhits.com.br/anime/dragon-ball-super-personagens/" target="_blank"&gt;Personagens&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="https://dragonball.fandom.com/pt-br/wiki/Dragon_Ball_Super_(mang%C3%A1)"&gt;Mangá&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="https://pt.wikipedia.org/wiki/Dragon_Ball_Super" target="_blank"&gt;+ Informações&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;/header&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Dragon Ball Super&lt;/h1&gt;
+        &lt;p&gt;Relembre um pouco sobre Dragon Ball Super. &lt;/p&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="https://criticalhits-com-br.webpkgcache.com/doc/-/s/criticalhits.com.br/anime/dragon-ball-super-personagens/" target="_blank"&gt;Personagens&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://dragonball.fandom.com/pt-br/wiki/Dragon_Ball_Super_(mang%C3%A1)"&gt;Mangá&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://pt.wikipedia.org/wiki/Dragon_Ball_Super" target="_blank"&gt;+ Informações&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
 
-&lt;!-- Seção Dragon Ball Super --&gt;
-&lt;section class="carousel slide mx-auto" data-bs-ride="carousel" id="carouselExampleControls"&gt;
-&lt;div class="carousel-inner"&gt;
-    &lt;div class="carousel-item active"&gt;
-        &lt;img src="https://preview.redd.it/sypoeebfdvox.jpg?auto=webp&s=966b9bfb61b66e0046a4f0e45ca6d44df5f863c0" class="d-block w-100" alt="title m3"&gt;
-    &lt;/div&gt;
-    &lt;div class="carousel-item"&gt;
-        &lt;img src="https://www.boletimnerd.com.br/wp-content/uploads/2017/08/musica-abertura-dragon-ball-super-cartoon-network-fb.jpg" class="d-block w-100" alt="title m2"&gt;
-    &lt;/div&gt;
-    &lt;div class="carousel-item"&gt;
-        &lt;img src="https://geekdama.com.br/wp-content/uploads/2015/06/dragon-ball-super-champa.jpg" class="d-block w-100" alt="title Ml"&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"&gt;
-    &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
-    &lt;span class="visually-hidden"&gt;Anterior&lt;/span&gt;
-&lt;/button&gt;
-&lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"&gt;
-    &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
-    &lt;span class="visually-hidden"&gt;Próximo&lt;/span&gt;
-&lt;/button&gt;
-&lt;p&gt;Em 28 de abril de 2015, Toei Animation anunciou Dragon Ball Super (ドラゴンボール超, Doragon Bōru Sūpā), a primeira série de anime de Dragon Ball a ser lançada em 18 anos desde Dragon Ball GT. Estreou em 5 de julho de 2015 e é exibida como uma série semanal às 9:00 da manhã na Fuji TV aos domingos. Masako Nozawa reprisa seus papéis como Goku, Gohan e Goten. A maioria do elenco original reprisa seus papéis também. Kouichi Yamadera e Masakazu Morita também reprisam seus papéis, como Bills e Whis, respectivamente. A história do anime é definida quatro anos após a derrota de Majin Boo, quando a Terra se tornou pacífica mais uma vez. Akira Toriyama é o criador da série, e também é creditado por "história original e conceitos de design de personagens".&lt;/p&gt;
-&lt;p&gt;Super Dragon Ball Heroes: Em maio de 2018, a Yonkou Productions anunciou o anime Super Dragon Ball Heroes, baseado no jogo de mesmo nome publicado pela Bandai Namco.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Seção sobre os personagens --&gt;
-&lt;section class="container mt-5"&gt;
-&lt;div class="row"&gt;
-    &lt;article class="col-lg-6 mb-4"&gt;
-        &lt;div class="card"&gt;
-            &lt;img src="https://th.bing.com/th/id/R.3fb45d89e8b1bfa17ebc2e44ffa55d9f?rik=sOzwnH94YWeeXw&riu=http%3a%2f%2fimg4.wikia.nocookie.net%2f__cb20131003175517%2fdragonball%2fes%2fimages%2f5%2f5d%2fGoku-papel-de-parede-198459.jpg&ehk=Vq3RW00KakJ3d5UKdtJtXUX1hv3IWRBS2FDDKCFxG1A%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="title"&gt;
-            &lt;div class="card-body"&gt;
-                &lt;h5 class="card-title"&gt;Goku&lt;/h5&gt;
-                &lt;p class="card-text"&gt;Goku, o protagonista de Dragon Ball, é um guerreiro Saiyajin com a personalidade otimista. Desde pequeno, ele treinou incansavelmente para se tornar mais forte, enfrentando desafios cada vez maiores. Com habilidades extraordinárias, como o Kamehameha e transformações icônicas como o Super Saiyajin, Goku é um defensor da Terra e do universo.&lt;/p&gt;
-                &lt;a href="#" class="btn btn-primary"&gt;Saiba mais sobre Goku&lt;/a&gt;
+    &lt;!-- Seção Dragon Ball Super --&gt;
+    &lt;section class="carousel slide mx-auto" data-bs-ride="carousel" id="carouselExampleControls"&gt;
+        &lt;div class="carousel-inner"&gt;
+            &lt;div class="carousel-item active"&gt;
+                &lt;img src="https://preview.redd.it/sypoeebfdvox.jpg?auto=webp&s=966b9bfb61b66e0046a4f0e45ca6d44df5f863c0" class="d-block w-100" alt="title m3"&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel-item"&gt;
+                &lt;img src="https://www.boletimnerd.com.br/wp-content/uploads/2017/08/musica-abertura-dragon-ball-super-cartoon-network-fb.jpg" class="d-block w-100" alt="title m2"&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel-item"&gt;
+                &lt;img src="https://geekdama.com.br/wp-content/uploads/2015/06/dragon-ball-super-champa.jpg" class="d-block w-100" alt="title Ml"&gt;
             &lt;/div&gt;
         &lt;/div&gt;
-    &lt;/article&gt;
+        &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"&gt;
+            &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+            &lt;span class="visually-hidden"&gt;Anterior&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"&gt;
+            &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+            &lt;span class="visually-hidden"&gt;Próximo&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;p&gt;Em 28 de abril de 2015, Toei Animation anunciou Dragon Ball Super (ドラゴンボール超, Doragon Bōru Sūpā), a primeira série de anime de Dragon Ball a ser lançada em 18 anos desde Dragon Ball GT. Estreou em 5 de julho de 2015 e é exibida como uma série semanal às 9:00 da manhã na Fuji TV aos domingos. Masako Nozawa reprisa seus papéis como Goku, Gohan e Goten. A maioria do elenco original reprisa seus papéis também. Kouichi Yamadera e Masakazu Morita também reprisam seus papéis, como Bills e Whis, respectivamente. A história do anime é definida quatro anos após a derrota de Majin Boo, quando a Terra se tornou pacífica mais uma vez. Akira Toriyama é o criador da série, e também é creditado por "história original e conceitos de design de personagens".&lt;/p&gt;
+        &lt;p&gt;Super Dragon Ball Heroes: Em maio de 2018, a Yonkou Productions anunciou o anime Super Dragon Ball Heroes, baseado no jogo de mesmo nome publicado pela Bandai Namco.&lt;/p&gt;
+    &lt;/section&gt;
 
-    &lt;article class="col-lg-6 mb-4"&gt;
-        &lt;div class="card"&gt;
-            &lt;img src="https://th.bing.com/th/id/R.5bca5134cbbbc6a225318ea34dd8f50b?rik=Ubb0Roql97Yhvg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fb%2ff%2fc%2f206914.jpg&ehk=RLUfXmNX3PX69yW9nxobwA1VYK70EkYVJ3xow4jc0Fw%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Vegeta"&gt;
-            &lt;div class="card-body"&gt;
-                &lt;h5 class="card-title"&gt;Vegeta&lt;/h5&gt;
-                &lt;p class="card-text"&gt;Vegeta, o príncipe dos Saiyajins, é um dos personagens mais emblemáticos de Dragon Ball. Inicialmente introduzido como um vilão orgulhoso e implacável, ele evolui ao longo da série, tornando-se um aliado valioso e rival de Goku. Vegeta é conhecido por sua determinação feroz, orgulho inabalável e busca constante por poder para superar seus limites. Embora sua personalidade seja muitas vezes dura, ele demonstra um profundo amor por sua família, especialmente Bulma e seus filhos.&lt;/p&gt;
-                &lt;a href="#" class="btn btn-primary"&gt;Saiba mais sobre Vegeta&lt;/a&gt;
-            &lt;/div&gt;
+    &lt;!-- Seção sobre os personagens --&gt;
+    &lt;section class="container mt-5"&gt;
+        &lt;div class="row"&gt;
+            &lt;article class="col-lg-6 mb-4"&gt;
+                &lt;div class="card"&gt;
+                    &lt;img src="https://th.bing.com/th/id/R.3fb45d89e8b1bfa17ebc2e44ffa55d9f?rik=sOzwnH94YWeeXw&riu=http%3a%2f%2fimg4.wikia.nocookie.net%2f__cb20131003175517%2fdragonball%2fes%2fimages%2f5%2f5d%2fGoku-papel-de-parede-198459.jpg&ehk=Vq3RW00KakJ3d5UKdtJtXUX1hv3IWRBS2FDDKCFxG1A%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="title"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;h5 class="card-title"&gt;Goku&lt;/h5&gt;
+                        &lt;p class="card-text"&gt;Goku, o protagonista de Dragon Ball, é um guerreiro Saiyajin com a personalidade otimista. Desde pequeno, ele treinou incansavelmente para se tornar mais forte, enfrentando desafios cada vez maiores. Com habilidades extraordinárias, como o Kamehameha e transformações icônicas como o Super Saiyajin, Goku é um defensor da Terra e do universo.&lt;/p&gt;
+                        &lt;a href="#" class="btn btn-primary"&gt;Saiba mais sobre Goku&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/article&gt;
+
+            &lt;article class="col-lg-6 mb-4"&gt;
+                &lt;div class="card"&gt;
+                    &lt;img src="https://th.bing.com/th/id/R.5bca5134cbbbc6a225318ea34dd8f50b?rik=Ubb0Roql97Yhvg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fb%2ff%2fc%2f206914.jpg&ehk=RLUfXmNX3PX69yW9nxobwA1VYK70EkYVJ3xow4jc0Fw%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Vegeta"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;h5 class="card-title"&gt;Vegeta&lt;/h5&gt;
+                        &lt;p class="card-text"&gt;Vegeta, o príncipe dos Saiyajins, é um dos personagens mais emblemáticos de Dragon Ball. Inicialmente introduzido como um vilão orgulhoso e implacável, ele evolui ao longo da série, tornando-se um aliado valioso e rival de Goku. Vegeta é conhecido por sua determinação feroz, orgulho inabalável e busca constante por poder para superar seus limites. Embora sua personalidade seja muitas vezes dura, ele demonstra um profundo amor por sua família, especialmente Bulma e seus filhos.&lt;/p&gt;
+                        &lt;a href="#" class="btn btn-primary"&gt;Saiba mais sobre Vegeta&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/article&gt;
         &lt;/div&gt;
-    &lt;/article&gt;
-&lt;/div&gt;
-&lt;/section&gt;
+    &lt;/section&gt;
 
-&lt;footer class="bg-light text-center p-3 mt-5"&gt;
-&lt;p&gt;&copy; 2025 [Seu Nome]. Todos os direitos reservados.&lt;/p&gt;
-&lt;/footer&gt;
+    &lt;footer class="bg-light text-center p-3 mt-5"&gt;
+        &lt;p&gt;&copy; 2025 [Seu Nome]. Todos os direitos reservados.&lt;/p&gt;
+    &lt;/footer&gt;
 
-&lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"&gt;&lt;/script&gt;
-&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-<h2>CSS;</h2>
-&lt;style&gt;
+ <h2>CSS;</h2>
+ &lt;style&gt;
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f0f0f0;
-color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 header {
-background-color: #FF6347;  &lt;!-- Cor vibrante de fundo --&gt;
-color: white;
-padding: 20px;
-text-align: center;
+    background-color: #FF6347;  &lt;!-- Cor vibrante de fundo --&gt;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 header nav ul {
-list-style-type: none;
-padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 header nav ul li {
-display: inline;
-margin: 0 15px;
+    display: inline;
+    margin: 0 15px;
 }
 
 header nav ul li a {
-color: white;
-text-decoration: none;
-font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 header nav ul li a:hover {
-color: #FFD700; &lt;!-- Cor de destaque ao passar o mouse --&gt;
+    color: #FFD700; &lt;!-- Cor de destaque ao passar o mouse --&gt;
 }
 
 section {
-padding: 30px;
-background-color: #fff;
-border-radius: 8px;
-margin: 20px auto;
-max-width: 1000px;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-text-align: center;
-font-size: 2em;
-color: #333;
+    text-align: center;
+    font-size: 2em;
+    color: #333;
 }
 
 ul {
-list-style-type: none;
-padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 ul li {
-padding: 15px;
-border-bottom: 1px solid #ddd;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
 }
 
 ul li a {
-font-size: 1.2em;
-color: #FF6347;
-text-decoration: none;
+    font-size: 1.2em;
+    color: #FF6347;
+    text-decoration: none;
 }
 
 ul li a:hover {
-color: #FFD700;
+    color: #FFD700;
 }
 
 ul li p {
-font-size: 1em;
-color: #666;
+    font-size: 1em;
+    color: #666;
 }
 
 footer {
-text-align: center;
-padding: 15px;
-background-color: #FF6347;
-color: white;
+    text-align: center;
+    padding: 15px;
+    background-color: #FF6347;
+    color: white;
 }
 
 .btn {
-display: inline-block;
-background-color: #FFD700; &lt;!-- Botão com cor vibrante --&gt;
-color: #333;
-text-decoration: none;
-padding: 10px 20px;
-margin-top: 10px;
-border-radius: 5px;
-font-weight: bold;
+    display: inline-block;
+    background-color: #FFD700; &lt;!-- Botão com cor vibrante --&gt;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .btn:hover {
-background-color: #FF4500; &lt;!-- Cor de hover --&gt;
-color: white;
+    background-color: #FF4500; &lt;!-- Cor de hover --&gt;
+    color: white;
 }
 &lt;/style&gt;
 
@@ -520,255 +532,404 @@ color: white;
 
 
 
-        </pre>
-        <button onclick="toggleCodeVisibility('code1')">Ver mais</button>
-        <script>
-            function toggleCodeVisibility(codeId) {
-                const codeElement = document.getElementById(codeId);
-                const button = codeElement.nextElementSibling; // O próximo elemento é o botão
-        
-                // Se o código estiver visível, esconder
-                if (codeElement.style.maxHeight) {
-                    codeElement.style.maxHeight = null;
-                    button.innerText = 'Ver mais'; // Alterar o texto do botão
-                } else {
-                    // Caso contrário, expandir
-                    codeElement.style.maxHeight = codeElement.scrollHeight + "px"; // Ajusta para a altura total do código
-                    button.innerText = 'Ver menos'; // Alterar o texto do botão
-                }
-            }
-        </script>
-        
-    </div>
+                </pre>
+                <button onclick="toggleCodeVisibility('code1')">Ver mais</button>
+                <script>
+                    function toggleCodeVisibility(codeId) {
+                        const codeElement = document.getElementById(codeId);
+                        const button = codeElement.nextElementSibling; // O próximo elemento é o botão
+                
+                        // Se o código estiver visível, esconder
+                        if (codeElement.style.maxHeight) {
+                            codeElement.style.maxHeight = null;
+                            button.innerText = 'Ver mais'; // Alterar o texto do botão
+                        } else {
+                            // Caso contrário, expandir
+                            codeElement.style.maxHeight = codeElement.scrollHeight + "px"; // Ajusta para a altura total do código
+                            button.innerText = 'Ver menos'; // Alterar o texto do botão
+                        }
+                    }
+                </script>
+                
+            </div>
 
 
-    <div class="project-card">
-        <img src="https://www.isbrasil.info/blog/ckfinder/userfiles/images/amostras-de-cores-de-designers-graficos-colocando-na-mesa-da-mesa_35675-1008(1).webp" alt="Website Institucional">
-        <h3>Gerador de Paleta de Cores</h3>
-        <p>Neste projeto, desenvolvi um Gerador de Paleta de Cores utilizando HTML, CSS e JavaScript. A aplicação permite ao usuário gerar uma paleta com cinco cores aleatórias em formato hexadecimal. Ao clicar em uma cor, o código hexadecimal correspondente é copiado para a área de transferência, facilitando sua utilização em outros projetos. Este projeto demonstra minhas habilidades no desenvolvimento de interfaces web interativas e responsivas, integrando funcionalidades práticas com um design moderno.</p>
-        <pre id="code2">
-            <h3>HTML</h3>
-            &lt;!DOCTYPE html&gt;
+            <div class="project-card">
+                <img src="https://www.isbrasil.info/blog/ckfinder/userfiles/images/amostras-de-cores-de-designers-graficos-colocando-na-mesa-da-mesa_35675-1008(1).webp" alt="Website Institucional">
+                <h3>Gerador de Paleta de Cores</h3>
+                <p>Neste projeto, desenvolvi um Gerador de Paleta de Cores utilizando HTML, CSS e JavaScript. A aplicação permite ao usuário gerar uma paleta com cinco cores aleatórias em formato hexadecimal. Ao clicar em uma cor, o código hexadecimal correspondente é copiado para a área de transferência, facilitando sua utilização em outros projetos. Este projeto demonstra minhas habilidades no desenvolvimento de interfaces web interativas e responsivas, integrando funcionalidades práticas com um design moderno.</p>
+                <pre id="code2">
+                    <h3>HTML</h3>
+                    &lt;!DOCTYPE html&gt;
 &lt;html lang="pt-BR"&gt;
 &lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-&lt;title&gt;Gerador de Paleta de Cores&lt;/title&gt;
-&lt;link rel="stylesheet" href="01.css"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Gerador de Paleta de Cores&lt;/title&gt;
+    &lt;link rel="stylesheet" href="01.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;header&gt;
-&lt;h1&gt;Gerador de Paleta de Cores&lt;/h1&gt;
-&lt;/header&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Gerador de Paleta de Cores&lt;/h1&gt;
+    &lt;/header&gt;
 
-&lt;main&gt;
-&lt;button id="generateBtn"&gt;Gerar Paleta&lt;/button&gt;
-&lt;div id="palette"&gt;&lt;/div&gt;
-&lt;/main&gt;
+    &lt;main&gt;
+        &lt;button id="generateBtn"&gt;Gerar Paleta&lt;/button&gt;
+        &lt;div id="palette"&gt;&lt;/div&gt;
+    &lt;/main&gt;
 
-&lt;footer&gt;
-&lt;p&gt;Desenvolvido por &lt;strong&gt;Heloysa Alves&lt;/strong&gt; | &lt;a href="https://seuportfolio.com" target="_blank"&gt;Portfólio&lt;/a&gt;&lt;/p&gt;
-&lt;/footer&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Desenvolvido por &lt;strong&gt;Heloysa Alves&lt;/strong&gt; | &lt;a href="https://seuportfolio.com" target="_blank"&gt;Portfólio&lt;/a&gt;&lt;/p&gt;
+    &lt;/footer&gt;
 
-&lt;script src="01.js"&gt;&lt;/script&gt;
+    &lt;script src="01.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 <h3>CSS</h3>
-&lt;!-- Estilos Gerais --&gt;
-body {
-font-family: Arial, sans-serif;
-text-align: center;
-background-color: #f5f5f5;
-margin: 0;
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-}
-
-&lt;!-- Cabeçalho --&gt;
-header {
-background-color: #6200ea;
-color: white;
-padding: 20px;
-}
-
-&lt;!-- Conteúdo Principal --&gt;
-main {
-flex: 1;
-padding: 20px;
-}
-
-button {
-padding: 10px 20px;
-margin: 20px;
-background-color: #6200ea;
-color: white;
-border: none;
-cursor: pointer;
-font-size: 16px;
-border-radius: 5px;
-}
-
-button:hover {
-background-color: #4500b5;
-}
-
-&lt;!-- Paleta de Cores --&gt;
-#palette {
-display: flex;
-justify-content: center;
-gap: 10px;
-flex-wrap: wrap;
-margin-top: 20px;
-}
-
-.color-box {
-width: 100px;
-height: 100px;
-cursor: pointer;
-border-radius: 5px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-weight: bold;
-color: white;
-transition: transform 0.2s;
-}
-
-.color-box:hover {
-transform: scale(1.1);
-}
-
-&lt;!-- Rodapé --&gt;
-footer {
-background-color: #333;
-color: white;
-padding: 15px;
-text-align: center;
-margin-top: auto;
-}
-
-footer a {
-color: #ffcc00;
-text-decoration: none;
-}
-
-footer a:hover {
-text-decoration: underline;
-}
-<h3>JS</h3>
-&lt;script&gt;
-    const generateBtn = document.getElementById("generateBtn");
-    const palette = document.getElementById("palette");
-
-    // Função para gerar um código hexadecimal aleatório
-    function getRandomColor() {
-        return "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0");
+    &lt;!-- Estilos Gerais --&gt;
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f5f5f5;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
 
-    // Função para gerar uma paleta de 5 cores
-    function generatePalette() {
-        palette.innerHTML = ""; // Limpa as cores anteriores
-        for (let i = 0; i &lt; 5; i++) {
-            const color = getRandomColor();
-            const colorBox = document.createElement("div");
-            colorBox.classList.add("color-box");
-            colorBox.style.backgroundColor = color;
-            colorBox.textContent = color;
+    &lt;!-- Cabeçalho --&gt;
+    header {
+        background-color: #6200ea;
+        color: white;
+        padding: 20px;
+    }
 
-            // Permitir cópia do código hexadecimal ao clicar
-            colorBox.addEventListener("click", () =&gt; {
-                navigator.clipboard.writeText(color);
-                alert(Copiado: ${color});
+    &lt;!-- Conteúdo Principal --&gt;
+    main {
+        flex: 1;
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin: 20px;
+        background-color: #6200ea;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #4500b5;
+    }
+
+    &lt;!-- Paleta de Cores --&gt;
+    #palette {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .color-box {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: white;
+        transition: transform 0.2s;
+    }
+
+    .color-box:hover {
+        transform: scale(1.1);
+    }
+
+    &lt;!-- Rodapé --&gt;
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        margin-top: auto;
+    }
+
+    footer a {
+        color: #ffcc00;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+    <h3>JS</h3>
+        &lt;script&gt;
+            const generateBtn = document.getElementById("generateBtn");
+            const palette = document.getElementById("palette");
+    
+            // Função para gerar um código hexadecimal aleatório
+            function getRandomColor() {
+                return "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0");
+            }
+    
+            // Função para gerar uma paleta de 5 cores
+            function generatePalette() {
+                palette.innerHTML = ""; // Limpa as cores anteriores
+                for (let i = 0; i &lt; 5; i++) {
+                    const color = getRandomColor();
+                    const colorBox = document.createElement("div");
+                    colorBox.classList.add("color-box");
+                    colorBox.style.backgroundColor = color;
+                    colorBox.textContent = color;
+    
+                    // Permitir cópia do código hexadecimal ao clicar
+                    colorBox.addEventListener("click", () =&gt; {
+                        navigator.clipboard.writeText(color);
+                        alert(Copiado: ${color});
+                    });
+    
+                    palette.appendChild(colorBox);
+                }
+            }
+    
+            // Gerar uma paleta ao carregar a página
+            window.onload = generatePalette;
+            generateBtn.addEventListener("click", generatePalette);
+        &lt;/script&gt;
+
+                </pre>
+                <button onclick="toggleCodeVisibility('code2')">Ver mais</button>
+                <script>
+                    function toggleCodeVisibility(codeId) {
+                        const codeElement = document.getElementById(codeId);
+                        const button = codeElement.nextElementSibling; // O próximo elemento é o botão
+                
+                        // Se o código estiver visível, esconder
+                        if (codeElement.style.maxHeight) {
+                            codeElement.style.maxHeight = null;
+                            button.innerText = 'Ver mais'; // Alterar o texto do botão
+                        } else {
+                            // Caso contrário, expandir
+                            codeElement.style.maxHeight = codeElement.scrollHeight + "px"; // Ajusta para a altura total do código
+                            button.innerText = 'Ver menos'; // Alterar o texto do botão
+                        }
+                    }
+                </script>
+            </div>
+
+            <div class="project-card">
+                <img src="https://static1.squarespace.com/static/5e5c4be1e925e0699b862415/t/5f7e19de149e5d1c45cf48fe/1602099682824/OpenClipart-Vectors_Pixabay_social.jpeg?format=1500w" alt="Jogo da Velha">
+                <h3>Jogo da Velha</h3>
+                <p>Esse projeto é uma implementação simples do clássico "Jogo da Velha", desenvolvido com HTML, CSS e JavaScript. A ideia é proporcionar uma experiência interativa onde dois jogadores podem se divertir alternando entre os símbolos "X" e "O" para tentar vencer o jogo. </p>
+                <pre id="code3">
+                    &lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Jogo da Velha&lt;/title&gt;
+  &lt;style&gt;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background: #eaeaea;
+      color: #333;
+    }
+
+    h1 {
+      margin: 20px;
+    }
+
+    hr {
+      width: 21rem;
+      border: none;
+      border-top: 3px solid #f7f7f7;
+      margin-bottom: 14px;
+    }
+
+    .game {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 5px;
+    }
+
+    .game button {
+      background-color: #a0a0a0;
+      border: none;
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      font-size: 50px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .game button:disabled {
+      cursor: not-allowed;
+      background-color: #777;
+    }
+
+    .currentPlayer {
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;h1&gt;Jogo da Velha&lt;/h1&gt;
+    &lt;br&gt;&lt;hr&gt;
+    &lt;div class="game"&gt;
+      &lt;button id="b1"&gt;&lt;/button&gt;
+      &lt;button id="b2"&gt;&lt;/button&gt;
+      &lt;button id="b3"&gt;&lt;/button&gt;
+      &lt;button id="b4"&gt;&lt;/button&gt;
+      &lt;button id="b5"&gt;&lt;/button&gt;
+      &lt;button id="b6"&gt;&lt;/button&gt;
+      &lt;button id="b7"&gt;&lt;/button&gt;
+      &lt;button id="b8"&gt;&lt;/button&gt;
+      &lt;button id="b9"&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;br&gt;&lt;hr&gt;
+    &lt;h2 class="currentPlayer"&gt;Vez do jogador: X&lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;script&gt;
+    const buttons = document.querySelectorAll(".game button");
+    const currentPlayerText = document.querySelector(".currentPlayer");
+    let currentPlayer = "X";
+
+    const winningCombinations = [
+      [0, 1, 2], 
+      [3, 4, 5], 
+      [6, 7, 8], 
+      [0, 3, 6], 
+      [1, 4, 7], 
+      [2, 5, 8], 
+      [0, 4, 8], 
+      [2, 4, 6], 
+    ];
+
+    function checkWinner() {
+      for (const combination of winningCombinations) {
+        const [a, b, c] = combination;
+        if (
+          buttons[a].textContent === currentPlayer &&
+          buttons[b].textContent === currentPlayer &&
+          buttons[c].textContent === currentPlayer
+        ) {
+          return true;
+        }
+      }
+      return false;
+    }
+
+    function checkDraw() {
+      return [...buttons].every(button => button.textContent !== "");
+    }
+
+    function resetGame() {
+      buttons.forEach(button => {
+        button.textContent = "";
+        button.disabled = false;
+      });
+      currentPlayer = "X";
+      currentPlayerText.textContent = Vez do jogador: ${currentPlayer};
+    }
+
+    buttons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        button.textContent = currentPlayer;
+        button.disabled = true;
+
+        if (checkWinner()) {
+          alert(Jogador ${currentPlayer} venceu!);
+          resetGame();
+          return;
+        }
+
+        if (checkDraw()) {
+          alert("Empate!");
+          resetGame();
+          return;
+        }
+
+        currentPlayer = currentPlayer === "X" ? "O" : "X";
+        currentPlayerText.textContent = Vez do jogador: ${currentPlayer};
+      });
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                   
+                </pre>
+                <button onclick="toggleCodeVisibility('code3')">Ver mais</button>
+                <script>
+                    function toggleCodeVisibility(codeId) {
+                        const codeElement = document.getElementById(codeId);
+                        const button = codeElement.nextElementSibling; // O próximo elemento é o botão
+                
+                        // Se o código estiver visível, esconder
+                        if (codeElement.style.maxHeight) {
+                            codeElement.style.maxHeight = null;
+                            button.innerText = 'Ver mais'; // Alterar o texto do botão
+                        } else {
+                            // Caso contrário, expandir
+                            codeElement.style.maxHeight = codeElement.scrollHeight + "px"; // Ajusta para a altura total do código
+                            button.innerText = 'Ver menos'; // Alterar o texto do botão
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div id="contato" class="content-section">
+        <h2>Entre em Contato</h2>
+        <div class="social-links">
+            <p>Me encontre também nas redes sociais:</p>
+            <ul>
+                <li><a href="mailto:hysaalves07@gmail.com">E-mail</a></li>
+                <li><a href="https://www.linkedin.com/in/heloysa-alves-29596734b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/hysaa07" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Heloysa Alves. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Ocultar todas as seções
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
             });
 
-            palette.appendChild(colorBox);
+            // Exibir a seção selecionada
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
         }
-    }
 
-    // Gerar uma paleta ao carregar a página
-    window.onload = generatePalette;
-    generateBtn.addEventListener("click", generatePalette);
-&lt;/script&gt;
-
-        </pre>
-        <button onclick="toggleCodeVisibility('code2')">Ver mais</button>
-        <script>
-            function toggleCodeVisibility(codeId) {
-                const codeElement = document.getElementById(codeId);
-                const button = codeElement.nextElementSibling; // O próximo elemento é o botão
-        
-                // Se o código estiver visível, esconder
-                if (codeElement.style.maxHeight) {
-                    codeElement.style.maxHeight = null;
-                    button.innerText = 'Ver mais'; // Alterar o texto do botão
-                } else {
-                    // Caso contrário, expandir
-                    codeElement.style.maxHeight = codeElement.scrollHeight + "px"; // Ajusta para a altura total do código
-                    button.innerText = 'Ver menos'; // Alterar o texto do botão
-                }
-            }
-        </script>
-    </div>
-
-    <div class="project-card">
-        <img src="imagem3.jpg" alt="E-commerce para Loja de Roupas">
-        <h3>E-commerce para Loja de Roupas</h3>
-        <p>Desenvolvimento de um e-commerce completo, com uma experiência de compra otimizada, incluindo funcionalidades de checkout seguro e navegação intuitiva.</p>
-        <pre id="code3">
-            <!-- Bloco de código aqui -->
-        </pre>
-        <button onclick="toggleCodeVisibility('code3')">Ver mais</button>
-        <script>
-            function toggleCodeVisibility(codeId) {
-                const codeElement = document.getElementById(codeId);
-                const button = codeElement.nextElementSibling; // O próximo elemento é o botão
-        
-                // Se o código estiver visível, esconder
-                if (codeElement.style.maxHeight) {
-                    codeElement.style.maxHeight = null;
-                    button.innerText = 'Ver mais'; // Alterar o texto do botão
-                } else {
-                    // Caso contrário, expandir
-                    codeElement.style.maxHeight = codeElement.scrollHeight + "px"; // Ajusta para a altura total do código
-                    button.innerText = 'Ver menos'; // Alterar o texto do botão
-                }
-            }
-        </script>
-    </div>
-</div>
-</div>
-
-<div id="contato" class="content-section">
-<h2>Entre em Contato</h2>
-<div class="social-links">
-    <p>Me encontre também nas redes sociais:</p>
-    <ul>
-        <li><a href="mailto:hysaalves07@gmail.com">E-mail</a></li>
-        <li><a href="https://www.linkedin.com/in/heloysa-alves-29596734b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/hysaa07" target="_blank">GitHub</a></li>
-    </ul>
-</div>
-</div>
-
-<!-- Rodapé -->
-<footer>
-<p>&copy; 2025 Heloysa Alves. Todos os direitos reservados.</p>
-</footer>
-
-<script>
-function showSection(sectionId) {
-    // Ocultar todas as seções
-    const sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => {
-        section.classList.remove('active');
-    });
-
-    // Exibir a seção selecionada
-    const activeSection = document.getElementById(sectionId);
-    activeSection.classList.add('active');
-}
-
-</script>
+    </script>
 </body>
 </html>
