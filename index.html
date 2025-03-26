@@ -302,8 +302,10 @@ button:hover {
         <div class="project-cards">
             <div class="project-card">
                 <img src="https://wallpaper.forfun.com/fetch/d5/d5a2100b4735c179baaf467f5a49b0a1.jpeg" alt="Landing Page para Agência Criativa">
-                <h3></h3>
+                <h3>WEB DBS</h3>
+                <p> WEB DBS é um projeto inspirado no universo de Dragon Ball Super, focado em explorar conceitos de design moderno, interatividade e boas práticas de programação. Este projeto demonstra habilidades em HTML, CSS, JavaScript e frameworks modernos para criar uma experiência envolvente para os fãs da série.</p>
                 <pre id="code1">
+                    <h3>HTML</h3>
                     &lt;!DOCTYPE html&gt;
 &lt;html lang="pt-br"&gt;
 &lt;head&gt;
@@ -529,20 +531,197 @@ footer {
 
             <div class="project-card">
                 <img src="https://www.isbrasil.info/blog/ckfinder/userfiles/images/amostras-de-cores-de-designers-graficos-colocando-na-mesa-da-mesa_35675-1008(1).webp" alt="Website Institucional">
-                <h3>Website Institucional</h3>
-                <p>Criação de um site institucional para uma empresa local, focado em uma navegação clara e responsiva, com design moderno e compatibilidade com todos os dispositivos.</p>
-                <pre>
-                    <!-- Bloco de código aqui -->
+                <h3>Gerador de Paleta de Cores</h3>
+                <p>Neste projeto, desenvolvi um Gerador de Paleta de Cores utilizando HTML, CSS e JavaScript. A aplicação permite ao usuário gerar uma paleta com cinco cores aleatórias em formato hexadecimal. Ao clicar em uma cor, o código hexadecimal correspondente é copiado para a área de transferência, facilitando sua utilização em outros projetos. Este projeto demonstra minhas habilidades no desenvolvimento de interfaces web interativas e responsivas, integrando funcionalidades práticas com um design moderno.</p>
+                <pre id="code2">
+                    <h3>HTML</h3>
+                    &lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Gerador de Paleta de Cores&lt;/title&gt;
+    &lt;link rel="stylesheet" href="01.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Gerador de Paleta de Cores&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;button id="generateBtn"&gt;Gerar Paleta&lt;/button&gt;
+        &lt;div id="palette"&gt;&lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;Desenvolvido por &lt;strong&gt;Heloysa Alves&lt;/strong&gt; | &lt;a href="https://seuportfolio.com" target="_blank"&gt;Portfólio&lt;/a&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+
+    &lt;script src="01.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+<h3>CSS</h3>
+    &lt;!-- Estilos Gerais --&gt;
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f5f5f5;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    &lt;!-- Cabeçalho --&gt;
+    header {
+        background-color: #6200ea;
+        color: white;
+        padding: 20px;
+    }
+
+    &lt;!-- Conteúdo Principal --&gt;
+    main {
+        flex: 1;
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin: 20px;
+        background-color: #6200ea;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #4500b5;
+    }
+
+    &lt;!-- Paleta de Cores --&gt;
+    #palette {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .color-box {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: white;
+        transition: transform 0.2s;
+    }
+
+    .color-box:hover {
+        transform: scale(1.1);
+    }
+
+    &lt;!-- Rodapé --&gt;
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        margin-top: auto;
+    }
+
+    footer a {
+        color: #ffcc00;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+    <h3>JS</h3>
+        &lt;script&gt;
+            const generateBtn = document.getElementById("generateBtn");
+            const palette = document.getElementById("palette");
+    
+            // Função para gerar um código hexadecimal aleatório
+            function getRandomColor() {
+                return "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0");
+            }
+    
+            // Função para gerar uma paleta de 5 cores
+            function generatePalette() {
+                palette.innerHTML = ""; // Limpa as cores anteriores
+                for (let i = 0; i &lt; 5; i++) {
+                    const color = getRandomColor();
+                    const colorBox = document.createElement("div");
+                    colorBox.classList.add("color-box");
+                    colorBox.style.backgroundColor = color;
+                    colorBox.textContent = color;
+    
+                    // Permitir cópia do código hexadecimal ao clicar
+                    colorBox.addEventListener("click", () =&gt; {
+                        navigator.clipboard.writeText(color);
+                        alert(Copiado: ${color});
+                    });
+    
+                    palette.appendChild(colorBox);
+                }
+            }
+    
+            // Gerar uma paleta ao carregar a página
+            window.onload = generatePalette;
+            generateBtn.addEventListener("click", generatePalette);
+        &lt;/script&gt;
+
                 </pre>
+                <button onclick="toggleCodeVisibility('code2')">Ver mais</button>
+                <script>
+                    function toggleCodeVisibility(codeId) {
+                        const codeElement = document.getElementById(codeId);
+                        const button = codeElement.nextElementSibling; // O próximo elemento é o botão
+                
+                        // Se o código estiver visível, esconder
+                        if (codeElement.style.maxHeight) {
+                            codeElement.style.maxHeight = null;
+                            button.innerText = 'Ver mais'; // Alterar o texto do botão
+                        } else {
+                            // Caso contrário, expandir
+                            codeElement.style.maxHeight = codeElement.scrollHeight + "px"; // Ajusta para a altura total do código
+                            button.innerText = 'Ver menos'; // Alterar o texto do botão
+                        }
+                    }
+                </script>
             </div>
 
             <div class="project-card">
                 <img src="imagem3.jpg" alt="E-commerce para Loja de Roupas">
                 <h3>E-commerce para Loja de Roupas</h3>
                 <p>Desenvolvimento de um e-commerce completo, com uma experiência de compra otimizada, incluindo funcionalidades de checkout seguro e navegação intuitiva.</p>
-                <pre>
+                <pre id="code3">
                     <!-- Bloco de código aqui -->
                 </pre>
+                <button onclick="toggleCodeVisibility('code3')">Ver mais</button>
+                <script>
+                    function toggleCodeVisibility(codeId) {
+                        const codeElement = document.getElementById(codeId);
+                        const button = codeElement.nextElementSibling; // O próximo elemento é o botão
+                
+                        // Se o código estiver visível, esconder
+                        if (codeElement.style.maxHeight) {
+                            codeElement.style.maxHeight = null;
+                            button.innerText = 'Ver mais'; // Alterar o texto do botão
+                        } else {
+                            // Caso contrário, expandir
+                            codeElement.style.maxHeight = codeElement.scrollHeight + "px"; // Ajusta para a altura total do código
+                            button.innerText = 'Ver menos'; // Alterar o texto do botão
+                        }
+                    }
+                </script>
             </div>
         </div>
     </div>
