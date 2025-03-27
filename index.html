@@ -82,48 +82,39 @@
             margin-bottom: 20px;
         }
 
-        /* Projetos */
-        .project-cards {
-            display: block; /* Alterado de flex para block para alinhar verticalmente */
-            gap: 20px;
-        }
-
         .project-card {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 20px; /* Espaço entre os projetos */
-        }
+    max-width: 800px; /* Define a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    font-size: 16px; /* Define um tamanho de fonte confortável */
+    line-height: 1.6; /* Melhora o espaçamento entre as linhas de texto */
+}
 
-        .project-card img {
-            width: 500px; /* Define a largura das imagens como 500px */
-            height: auto; /* Mantém a proporção das imagens */
-            display: block; /* Garante que a imagem seja tratada como um bloco */
-            margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
-        }
+.project-card img {
+    width: 100%; /* Faz a imagem se ajustar ao tamanho da largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Dá borda arredondada à imagem */
+    margin-bottom: 15px; /* Adiciona espaçamento entre a imagem e o conteúdo abaixo */
+}
 
-        .project-card h3 {
-            font-size: 24px;
-            margin-top: 10px;
-        }
+.project-card h3 {
+    font-size: 1.5em; /* Define o tamanho da fonte dos títulos */
+    margin-top: 20px; /* Adiciona espaço acima do título */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
 
-        .project-card p {
-            font-size: 16px;
-            margin-top: 10px;
-        }
+.project-card p {
+    margin-bottom: 20px; /* Adiciona um espaço entre os parágrafos */
+}
 
-        /* Bloco de código */
-        pre {
-            background-color: #222;
-            color: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            font-size: 14px;
-            overflow-x: auto;
-            margin-top: 15px;
-        }
+pre {
+    background-color: #f4f4f4; /* Altera o fundo do código para um tom claro */
+    padding: 15px; /* Espaçamento interno do código */
+    border-radius: 8px; /* Borda arredondada do código */
+    overflow-x: auto; /* Adiciona rolagem horizontal caso o código seja maior que o container */
+    font-size: 14px; /* Ajuste de tamanho da fonte do código */
+}
+
         /* Bloco de código */
 pre {
     background-color: #222;
@@ -299,14 +290,15 @@ button:hover {
             <li><a href="javascript:void(0);" onclick="showSection('contato')">Contato</a></li>
         </ul>
     </header>
-    <!-- Foto de perfil -->
-    <img src="https://avatars.githubusercontent.com/u/191175685?v=4" alt="Heloysa Alves" class="perfil">
-
+    
+    
 </section>
 
     <!-- Seções -->
     <div id="home" class="content-section active">
         <h2>Olá, eu sou Heloysa Alves</h2>
+        <!-- Foto de perfil -->
+    <img src="https://avatars.githubusercontent.com/u/191175685?v=4" alt="Heloysa Alves" class="perfil">
         <p>Sou Desenvolvedora Web e Designer Gráfico, com paixão por criar soluções digitais que combinam design inovador e funcionalidade.</p>
         <!-- Botão para ver projetos -->
         <a href="javascript:void(0);" onclick="showSection('projetos')" class="cta-button">Ver meus projetos</a>
@@ -314,7 +306,9 @@ button:hover {
 
     <div id="sobre" class="content-section">
         <h2>Sobre Mim</h2>
-        <p>Olá! Meu nome é Heloysa Alves, sou desenvolvedora web e designer gráfico, apaixonada por criar experiências digitais dinâmicas e imersivas. Tenho experiência em HTML, CSS e JavaScript, além de um olhar atento para o design e a usabilidade. Busco sempre unir criatividade e funcionalidade em cada projeto, garantindo interfaces intuitivas e visualmente atraentes.
+        <!-- Foto de perfil -->
+    <img src="https://avatars.githubusercontent.com/u/191175685?v=4" alt="Heloysa Alves" class="perfil">
+        <p>Olá! Meu nome é Heloysa Alves, sou desenvolvedora web e designer gráfico, apaixonada por criar experiências digitais. Tenho experiência em HTML, CSS e JavaScript, além de um olhar atento para o design e a usabilidade. Busco sempre unir criatividade e funcionalidade em cada projeto, garantindo interfaces intuitivas e visualmente atraentes.
 
             Atualmente, estou cursando Programação Web no IFRN, com previsão de conclusão em março de 2025. Minha jornada na tecnologia me tornou uma pessoa observadora, analítica e versátil, capaz de trabalhar tanto de forma independente quanto em equipe. Apesar da programação ser uma de minhas habilidades, meu verdadeiro interesse está em trabalhos mais práticos e criativos.
             
